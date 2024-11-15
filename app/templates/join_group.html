@@ -1,0 +1,13 @@
+<!-- templates/join_group.html -->
+{% extends "base.html" %}
+{% block title %}Join Group{% endblock %}
+{% block content %}
+<h2>Join a Group</h2>
+<form method="POST" action="{{ url_for('main.join_group') }}">
+    <div class="form-group mt-3">
+        <label for="group_code">Enter Group Code:</label>
+        <input type="text" name="group_code" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Join Group</button>
+</form>
+{% endblock %}

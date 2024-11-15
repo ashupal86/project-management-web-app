@@ -1,0 +1,10 @@
+<!-- templates/home.html -->
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="text-center">
+    <h1>Welcome to the Student Group Management App</h1>
+    <a class="btn btn-primary m-2" href="{{ url_for('main.register') }}">Register as a Student</a>
+    <a class="btn btn-secondary m-2" href="{{ url_for('main.login') }}">Login</a>
+</div>
+{% endblock %}

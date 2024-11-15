@@ -1,0 +1,25 @@
+<!-- templates/group_details.html -->
+{% extends "base.html" %}
+{% block title %}Group Details{% endblock %}
+{% block content %}
+<h2>{{ group.project_name }}</h2>
+<p><strong>Description:</strong> {{ group.description }}</p>
+<p><strong>GitHub ID:</strong> {{ group.github_id }}</p>
+<p><strong>Status:</strong> {{ group.approval_status }}</p>
+<p><strong>Group Code:</strong> {{ group.group_code }}</p>
+
+<h3>Group Members:</h3>
+<ul>
+    {% for member in members %}
+        <li>{{ member.name }}</li>
+    {% endfor %}
+</ul>
+
+{% if group.feedback %}
+    <h4>Admin Feedback:</h4>
+    <pre>{{ group.feedback }}</pre>
+{% else %}
+    <p>No feedback yet.</p>
+{% endif %}
+
+{% endblock %}

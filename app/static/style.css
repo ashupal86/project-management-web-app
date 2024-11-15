@@ -1,0 +1,24 @@
+/* Custom CSS */
+body {
+    background-color: #f4f4f9;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+textarea {
+    min-height: 100px;
+}

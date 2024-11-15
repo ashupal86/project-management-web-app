@@ -1,0 +1,8 @@
+<!-- templates/student_dashboard.html -->
+{% extends "base.html" %}
+{% block title %}Student Dashboard{% endblock %}
+{% block content %}
+<h2>Student Dashboard</h2>
+<a class="btn btn-success mt-3" href="{{ url_for('main.create_group') }}">Create Group</a>
+<a class="btn btn-primary mt-3" href="{{ url_for('main.join_group') }}">Join Group</a>
+{% endblock %}
